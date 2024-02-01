@@ -2,7 +2,7 @@
 import pandas as pd
 
 # 엑셀 파일의 url 저장
-file_url = r"C:\dev\medical_dataset\medicine_7th.xlsx"
+file_url = r"C:\dev\hope_project\medical_dataset\medicine_7th.xlsx"
 
 # xlsx 파일을 읽어서 데이터프레임 생성
 df = pd.read_excel(file_url)
@@ -13,7 +13,7 @@ print(df.isnull().sum())
 change_null_data = df.fillna("-")
 print(change_null_data.isnull().sum())
 
-# xlsx 파일로 저장
-writer = pd.ExcelWriter(r"C:\dev\medical_dataset\medicine_8th.xlsx", options={'strings_to_urls': False})
-change_null_data.to_excel(writer, index=False)
-writer.save()
+# # xlsx 파일로 저장
+# writer = pd.ExcelWriter(r"C:\dev\medical_dataset\medicine_8th.xlsx", options={'strings_to_urls': False})
+# change_null_data.to_excel(writer, index=False)
+# writer.save()

@@ -71,6 +71,6 @@ send_to_elasticsearch()
 # scheduler.add_job(func=send_to_elasticsearch, trigger="cron", minute='*/1', id="get_movie")
 # app.py에 포스트맨 사용을 위한 GET 추가
 # app.add_url_rule('/api/elastic', 'send_to_elasticsearch', send_to_elasticsearch, methods=['GET'])
-# 포스트 맨에서는 GET 방식으롷 http://127.0.0.1:5000/api/elastic
+# 포스트 맨에서는 GET 방식으로 http://127.0.0.1:5000/api/elastic
 
 
